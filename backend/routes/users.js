@@ -1,18 +1,19 @@
-function createUserRoutes(app) {
-  app.post("/user/signup", function (req, res) {
-    res.json({
-      message: "You are signed up",
-    });
+const { Router } = require("express");
+const userRouter = Router();
+
+userRouter.post("/signup", function (req, res) {
+  res.json({
+    message: "You are signed up",
   });
-}
+});
 
 userRouter.post("/signin", function (req, res) {
   res.json({ message: "You are Signed in" });
 });
 
-userRouter.get("/purchases", function (req, res) {
+userRouter.get("/course", function (req, res) {
   res.json({
-    message: "Your purchases",
+    message: "Your courses",
   });
 });
 
