@@ -12,19 +12,19 @@ adminRouter.post("/signin", function (req, res) {
   res.json({ message: "You are Signed in" });
 });
 
-adminRouter.get("/course", function (req, res) {
-  res.json({
-    message: "Your purchases",
-  });
-});
-
-adminRouter.put("/course", function (req, res) {
+adminRouter.post("/", function (req, res) {
   res.json({
     message: "Your updated course",
   });
 });
 
-adminRouter.get("/course/bulk", function (req, res) {
+adminRouter.put("/", function (req, res) {
+  res.json({
+    message: "Your updated course",
+  });
+});
+
+adminRouter.get("/bulk", function (req, res) {
   res.json({
     message: "Your updated course",
   });
