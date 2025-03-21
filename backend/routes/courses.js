@@ -8,7 +8,7 @@ coursesRouter.post("/purchase", function (req, res) {
   });
 });
 
-coursesRouter.get("/courses", function (req, res) {
+coursesRouter.get("/preview", function (req, res) {
   res.json({
     message: "You courses",
   });
