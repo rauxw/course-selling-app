@@ -12,9 +12,9 @@ const app = express();
 
 app.use(express.json());
 
-app.use("api/v1/user", userRouter);
-app.use("api/v1/admin", adminRouter);
-app.use("api/v1/course", coursesRouter);
+app.use("/api/v1/user", userRouter);
+app.use("/api/v1/admin", adminRouter);
+app.use("/api/v1/course", coursesRouter);
 
 async function main() {
   await mongoose.connect(MONGO_URL);
